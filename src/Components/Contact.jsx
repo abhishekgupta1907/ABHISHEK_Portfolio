@@ -24,10 +24,9 @@ const Contact = () => {
                     </a>
 
                     <a
-                        href="linkedin.com/in/abhishek-gupta-1a7923253"
+                        href="https://linkedin.com/in/abhishek-gupta-1a7923253"
                         target="_blank"
-                        rel="noreferrer"
-                        className="hover:text-sky-400 transition"
+                        rel="noopener noreferrer"
                     >
                         <FaLinkedin />
                     </a>
