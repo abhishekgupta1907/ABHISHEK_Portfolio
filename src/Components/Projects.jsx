@@ -9,7 +9,7 @@ const projects = [
             "Full MERN E-Commerce platform with authentication, product management, cart functionality and order processing.",
         tech: ["React", "Node.js", "Express", "MongoDB"],
         image: nvmart,
-        // github: "#",
+        //github: "#",
         // demo: "#",
     },
     {
