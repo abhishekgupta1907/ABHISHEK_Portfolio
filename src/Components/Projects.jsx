@@ -1,37 +1,43 @@
 import { motion } from "framer-motion";
-
+import nvmart from "../assets/projects/nvmart.png";
+import food from "../assets/projects/food.png";
+import blog from "../assets/projects/blog.png";
 const projects = [
     {
         title: "NVMart",
         description:
             "Full MERN E-Commerce platform with authentication, product management, cart functionality and order processing.",
         tech: ["React", "Node.js", "Express", "MongoDB"],
-        github: "#",
-        demo: "#",
+        image: nvmart,
+        // github: "#",
+        // demo: "#",
     },
     {
         title: "Food Ordering Website",
         description:
             "Responsive food ordering platform featuring modern UI, category filtering and GSAP animations.",
         tech: ["React", "CSS", "GSAP"],
-        github: "#",
-        demo: "#",
+        image: food,
+        // github: "#",
+        // demo: "#",
     },
     {
         title: "Movie Database App",
         description:
             "Movie management system with CRUD operations, search and genre filtering.",
         tech: ["MongoDB", "Express", "React", "Node"],
-        github: "#",
-        demo: "#",
+
+        // github: "#",
+        // demo: "#",
     },
     {
         title: "Blog Website",
         description:
             "Modern blogging platform with dynamic content and responsive design.",
         tech: ["React", "Tailwind CSS"],
-        github: "#",
-        demo: "#",
+        image: blog,
+        // github: "#",
+        // demo: "#",
     },
 ];
 
@@ -59,11 +65,11 @@ const Projects = () => {
                             className="bg-slate-800 rounded-xl overflow-hidden shadow-lg hover:-translate-y-2 transition duration-300"
                         >
                             {/* Project Image */}
-                            <div className="h-56 bg-slate-700 flex items-center justify-center">
-                                <span className="text-gray-300">
-                                    Project Screenshot
-                                </span>
-                            </div>
+                            <img
+                                src={project.image}
+                                alt={project.title}
+                                className="w-full h-56 object-cover"
+                            />
 
                             <div className="p-6">
                                 <h3 className="text-2xl font-bold text-sky-400">
@@ -86,7 +92,7 @@ const Projects = () => {
                                 </div>
 
                                 <div className="flex gap-4 mt-6">
-                                    <a
+                                    {/* <a
                                         href={project.github}
                                         target="_blank"
                                         rel="noreferrer"
@@ -102,7 +108,7 @@ const Projects = () => {
                                         className="px-5 py-2 border border-sky-500 rounded-lg hover:bg-sky-500"
                                     >
                                         Live Demo
-                                    </a>
+                                    </a> */}
                                 </div>
                             </div>
                         </motion.div>
